@@ -3,30 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting...</title>
-
-    <!-- Redirect Meta Tag (3-second delay) -->
-    <meta http-equiv="refresh" content="3; url=https://www.example.com">
-
+    <title>Cup Matcher - 3D Printable Logic Game</title>
     <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Colors */
+        :root {
+            --blue: #3A86FF;
+            --red: #FF006E;
+            --green: #00F5D4;
+            --background: #f9f9f9;
+            --text-dark: #333;
+            --text-light: #f9f9f9;
+        }
+
         body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
             font-family: Arial, sans-serif;
+            background-color: var(--background);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
             text-align: center;
-            color: #333;
         }
-        .message {
-            font-size: 1.2em;
+
+        h1 {
+            color: var(--blue);
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
         }
+
+        .section {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            color: var(--green);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: var(--text-dark);
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .setup, .gameplay, .scoring, .winning {
+            padding: 1rem;
+            border-left: 5px solid var(--red);
+            background-color: var(--background);
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+
+        .setup h3, .gameplay h3, .scoring h3, .winning h3 {
+            color: var(--blue);
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            text-align: left;
+            color: var(--text-dark);
+        }
+
+        .footer {
+            margin-top: 3rem;
+            color: var(--text-light);
+            background-color: var(--blue);
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
     </style>
 </head>
 <body>
-    <div class="message">
-        <p>Redirecting you to our website...</p>
-        <p>If you're not redirected, <a href="https://www.example.com">click here</a>.</p>
+    <div class="container">
+        <h1>Cup Matcher - A 3D Printable Logic Game</h1>
+
+        <div class="section">
+            <h2>How to Play</h2>
+
+            <div class="setup">
+                <h3>Setup</h3>
+                <p>The game can be played in multiple ways, depending on the number of players and sets available:</p>
+                <ul>
+                    <li><strong>Single Set Play:</strong> Use one set of cups to have one player as the "arranger" and the other as the "guesser."</li>
+                    <li><strong>Dual Set Competition:</strong> With two sets, both players take turns being the arranger and guesser, competing to see who can guess the correct order in the fewest rounds.</li>
+                    <li><strong>Multi-Set Challenge:</strong> For more than two players or to increase the difficulty, print more than four sets. One player guesses the order of all sets simultaneously, adding a new level of challenge and strategy.</li>
+                </ul>
+            </div>
+
+            <div class="objective">
+                <h3>Objective</h3>
+                <p>The arranger secretly arranges their set of cups in a specific order under the box. The guesser must deduce the exact order of the cups by arranging their own set of cups.</p>
+            </div>
+
+            <div class="gameplay">
+                <h3>Gameplay</h3>
+                <ul>
+                    <li>The guesser arranges their cups in a guessed order.</li>
+                    <li>The arranger then gives feedback, indicating how many cups are in the correct spot (without specifying which cups or positions).</li>
+                    <li>The guesser uses this feedback to adjust their arrangement in the next round.</li>
+                    <li>This process repeats until the guesser has correctly matched the order of all the cups.</li>
+                </ul>
+            </div>
+
+            <div class="scoring">
+                <h3>Scoring</h3>
+                <p>Each round, the guesser is scored based on how many cups are correctly positioned. The game can continue with the same or different players taking on the roles of arranger and guesser.</p>
+            </div>
+
+            <div class="winning">
+                <h3>Winning</h3>
+                <p>The game ends when the guesser successfully matches all the cups in the correct order. The player with the fewest rounds taken to guess correctly wins!</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Get started with your own 3D printable Cup Matcher set and enjoy a fun and educational game with friends and family!</p>
+        </div>
     </div>
 </body>
 </html>
